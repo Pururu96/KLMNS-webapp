@@ -1,6 +1,10 @@
 const express = require('express');
 const exphbs  = require('express-handlebars');
 
+// import sqlite modules
+const sqlite3 = require('sqlite3');
+const { open } = require('sqlite');
+
 const app = express();
 const PORT =  process.env.PORT || 3017;
 
@@ -15,6 +19,16 @@ app.use(express.static('public'));
 
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
+
+//database set up//
+
+open({
+	filename: './data.db',
+	driver: sqlite3.Database
+})
+
+	
+
 
 let counter = 0;
 
