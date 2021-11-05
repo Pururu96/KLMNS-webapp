@@ -13,6 +13,26 @@ body {
   color: #444444;
 }
 
+.location {
+  /*margin: 0em;
+  padding: 0em;*/
+  display: inline;
+  float: left;
+}
+
+.contacts {
+  /*margin: 0em;
+  padding: 0em;*/
+  display: inline;
+  float: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 a {
   color: #1977cc;
   text-decoration: none;
