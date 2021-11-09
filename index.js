@@ -6,7 +6,7 @@ const sqlite3 = require('sqlite3');
 const { open } = require('sqlite');
 
 const app = express();
-const PORT =  process.env.PORT || 3017;
+const PORT =  process.env.PORT || 3000;
 
 // enable the req.body object - to allow us to use HTML forms
 app.use(express.json());
