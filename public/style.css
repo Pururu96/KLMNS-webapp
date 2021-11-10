@@ -13,6 +13,10 @@ body {
   color: #444444;
 }
 
+.button {
+  width: 50%;
+}
+
 .location {
   /*margin: 0em;
   padding: 0em;*/
