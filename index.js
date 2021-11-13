@@ -40,8 +40,9 @@ app.get('/', function(req, res) {
 
 app.post('/count', function(req, res) {
 	counter++;
-	res.redirect('/')
+	// res.redirect('/')
 });
+
 
 
 // start  the server and start listening for HTTP request on the PORT number specified...
