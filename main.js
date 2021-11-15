@@ -256,11 +256,11 @@
  
       // if there's an error
       ScheduleDB.onerror = function() {
-           console.log('error');
+           console.log('you have an error');
       }
       // if everything is fine, assign the result is to the (letDB) instance 
       ScheduleDB.onsuccess = function() {
-           // console.log('Database Ready');
+           console.log('your appointment has been booked successfully');
  
            
            DB = ScheduleDB.result;
@@ -273,14 +273,14 @@
            
            let db = e.target.result;
            
-           let objectStore = db.createObjectStore('consultations', { keyPath: 'key', autoIncrement: true } );
+          //  let objectStore = db.createObjectStore('consultations', { keyPath: 'key', autoIncrement: true } );
  
          
-           objectStore.createIndex('patientname', 'patientname', { unique: false } );
-           objectStore.createIndex('contact', 'contact', { unique: false } );
-           objectStore.createIndex('date', 'date', { unique: false } );
-           objectStore.createIndex('time', 'time', { unique: false } );
-           objectStore.createIndex('symptoms', 'symptoms', { unique: false } );
+          //  objectStore.createIndex('patientname', 'patientname', { unique: false } );
+          //  objectStore.createIndex('contact', 'contact', { unique: false } );
+          //  objectStore.createIndex('date', 'date', { unique: false } );
+          //  objectStore.createIndex('time', 'time', { unique: false } );
+          //  objectStore.createIndex('symptoms', 'symptoms', { unique: false } );
  
            //console.log('Database ready and fields created!');
       }
