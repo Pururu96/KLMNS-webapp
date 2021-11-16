@@ -449,29 +449,25 @@
        <form action="forms/appointment.php" method="post" role="form" class="php-email-form"></form>
           <div class="row">
             <div class="col-md-4 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
-                data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
+                        
+              <input type="text" name="name" class="form-control" id="patient-name" placeholder="Name" required>
             </div>
+
             <div class="col-md-4 form-group mt-3 mt-md-0">
               <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
                 data-rule="email" data-msg="Please enter a valid email">
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone"
-                data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
+              <input type="tel" class="form-control" id="phone" placeholder="123" required>
             </div>
           </div>
+
           <div class="row">
             <div class="col-md-4 form-group mt-3">
-
-
-              <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Date"
-                data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
+              <input type="date" class="form-control" id="date" placeholder="Date">
             </div>
+              
             <div class="col-md-4 form-group mt-3">
               <select name="department" id="department" class="form-select">
                 <option value="">Select Department</option>
@@ -485,7 +481,10 @@
               <select name="doctor" id="doctor" class="form-select">
                 <option value="">Select Doctor</option>
                 <option value="Doctor 1">Dr Leta</option>
-                <option value="Doctor 2">Dr Madoda</option>
+                <option value="Doctor 2">Dr Mphahlele</option>
+                <option value="Doctor 2">Dr Kgomokaboya</option>
+                <option value="Doctor 2">Dr Simelane</option>
+                <option value="Doctor 2">Dr Ngwekazi</option>
               </select>
               <div class="validate"></div>
             </div>
@@ -501,8 +500,8 @@
           </div>
 
           <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
-            <div class="validate"></div>
+            <textarea class="form-control" name="message" rows="5" placeholder="Describe your symptoms (Optional)"></textarea>
+            
           </div>
          
         
@@ -631,6 +630,15 @@ function toggleText(){
                 </div>
             </div>
       
+
+          <div class="text-center">
+            <button type="submit">Submit</button>
+          </div>
+
+        </form>
+
+      </div>
+    </section>
     <!-- End Appointment Section -->
 
     <!-- Start Appointment Section -->
@@ -661,7 +669,7 @@ function toggleText(){
                 <input type="text" id="patient-name" class="form-control" placeholder="Name" required>
               </div>
             </div>
-            <!---->
+            <!-->
     <!--  <div class="form-group row">
               <label class="col-sm-4 col-lg-4">
                 Contact
@@ -670,7 +678,7 @@ function toggleText(){
                 <input type="tel" id="contact" class="form-control" placeholder="123" required>
               </div>
             </div>
-            <!---->
+            <!-->
     <!--  <div class="form-group row">
               <label class="col-sm-4 col-lg-4">
                 Date
@@ -679,7 +687,7 @@ function toggleText(){
                 <input type="date" id="date" class="form-control">
               </div>
             </div>
-            <!---->
+            <!-->
     <!-- <div class="form-group row">
               <label class="col-sm-4 col-lg-4">
                 Time
@@ -688,7 +696,7 @@ function toggleText(){
                 <input type="time" id="time" class="form-control">
               </div>
             </div>
-            <!---->
+            <!-->
     <!--  <div class="form-group row">
               <label class="col-sm-4 col-lg-4">
                 Symptoms
@@ -697,7 +705,7 @@ function toggleText(){
                 <textarea id="symptoms" class="form-control" required></textarea>
               </div>
             </div>
-            <!---->
+            <!-->
     <!--   <div class="form-group row justify-content-end">
               <div class="col-sm-5">
                 <button type="submit" class="btn btn-form">
@@ -715,7 +723,7 @@ function toggleText(){
       </div>
     </div>
     <script src="main.js"></script>
-     <!---->
+     <!-->
 
     <!-- End consultation Section -->
 

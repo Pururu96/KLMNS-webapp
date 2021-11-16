@@ -265,11 +265,11 @@
  
       // if there's an error
       ScheduleDB.onerror = function() {
-           console.log('error');
+           console.log('you have an error');
       }
       // if everything is fine, assign the result is to the (letDB) instance 
       ScheduleDB.onsuccess = function() {
-           // console.log('Database Ready');
+           console.log('your appointment has been booked successfully');
  
            
            DB = ScheduleDB.result;
@@ -291,7 +291,7 @@
            objectStore.createIndex('time', 'time', { unique: false } );
            objectStore.createIndex('symptoms', 'symptoms', { unique: false } );
  
-           //console.log('Database ready and fields created!');
+           console.log('Database ready and fields created!');
       }
  
       form.addEventListener('submit', addConsultations);
