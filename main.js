@@ -114,7 +114,16 @@
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
   }
-
+  let btnName = document.getElementById('btnId');
+  btnName.addEventListener('click', ()=>{
+    let element = document.getElementById('elementId');
+    if (element.style.display != 'inline'){
+        element.style.display = 'inline';
+      }
+    else{
+      element.style.display = 'none'
+    }
+  })
   /**
    * Mobile nav toggle
    */

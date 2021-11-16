@@ -58,12 +58,16 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          
+         
           <li><a class="nav-link scrollto" href="#services">Medical Info</a></li>
-          &nbsp; &nbsp;
+         
           <li><a href="#appointment" class="scrollto"><span class="d-none d-md-inline">Make an Appointment</a></li>
+          
+                        
           <li><a class="nav-link scrollto" href="#about">Consultation</a></li>
-          {{!-- <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li> --}}
-          {{!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a> --}}
+           {{!-<li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>--}}
+          {{! <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a> --}}
             {{!-- <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
@@ -200,7 +204,6 @@
       </div>
     </section><!-- End Counts Section -->
 
-    <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container">
 
@@ -213,11 +216,11 @@
         <div class="row">
           <div class="col-lg-12 col-md-6 d-flex align-items-stretch">
             <div class="icon-box">
-              <div class="icon"><i class="fas fa-heartbeat"></i></div>
-              <h4>Personal information</h4>
+              <div class="icon"><i class="fas fa-hospital-user"></i></div>
+              <form action="/personal" method="POST" class="row g-3"><h4>Personal information</h4>
               <p>Please provide accurate personal details below</p>
 
-              <form class="row g-3">
+          
                 <div class="col-md-6">
                   <label for="inputName4" class="form-label">Patient Name</label>
                   <input type="name" class="form-control" id="inputName4">
@@ -313,53 +316,27 @@
                   <label for="floatingTextarea"></label>
 
                 </div>
+ </form>
+                
+                
 
-                <div class="terms">
-                  <h4>Consent for diagnosis</h4>
-                  <p>I do hereby authorize that all the above information is correct. I consent to give KLMNS access to
-                    my medical records and to offer me a remote diagnosis. I fully understand that KLMNS will not be
-                    help liable for any damages to my health due to a misdiagnosis and I agree that KLMNS can use my
-                    personal information for research purposes.</p>
-                </div>
-
-
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">Agree to terms and conditions
-                    </label>
-                  </div>
-                </div>
-
+         
           
                 
-<div>
 
-
-
-                  <button type="submit"  class="btn btn-primary">Save&Continue</button>
-                </div>
                 
-              </form>
-            </div>
-          </div>
-        </div>
-        <br>
-
-
-        <div class="container">
-
-<div class="row">
+              
+              <div class="row">
 
 
        
             <div class="col-lg-12 col-md-6 d-flex align-items-stretch"></div>
 
 
-            <div class="icon-box">
-              <div class="icon"><i class="fas fa-hospital-user"></i></div>
+           
+              <div class="icon"><i class="fas fa-heartbeat"></i></div>
 
-              <h4>Symptoms</h4>
+             <h4>Symptoms</h4>
               <p>Please tick the symptoms applicable to you</p>
               <form>
                 <ul class="list">
@@ -421,8 +398,24 @@
                     <label for="item-14">Lower backpain</label>
                   </li>
                 </ul>
+                <div class="terms">
+                  <h4>Consent for diagnosis</h4>
+                  <p>I do hereby authorize that all the above information is correct. I consent to give KLMNS access to
+                    my medical records and to offer me a remote diagnosis. I fully understand that KLMNS will not be
+                    held liable for any damages to my health due to a misdiagnosis and I agree that KLMNS can use my
+                    personal information for research purposes.</p>
+                </div>
+
+
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">Agree to terms and conditions
+                    </label>
+                  </div>
                 <div>
-                  <button type="submit">Submit</button>
+                 
+                  <a href="#appointment"><button type="submit" class="btn-get-started scrollto">Submit</button></a>
 
                 </div>
               </form>
@@ -430,7 +423,16 @@
             </div>
           </div>
         </div>
-      
+       </div>
+            </div>
+          </div>
+       
+    
+
+          </div>
+        </div>
+       </div>
+  </div>
     
 
     </section><!-- End Services Section -->
@@ -444,7 +446,11 @@
           <p>Please make an appointment below with our trusted doctors</p>
         </div>
 
+<<<<<<< HEAD
         <form action="/appointment" method="post" role="form">
+=======
+       <form action="forms/appointment.php" method="post" role="form" class="php-email-form"></form>
+>>>>>>> f6b3e1c0abd66039aeb3f0eac0326b57a8b37f61
           <div class="row">
             <div class="col-md-4 form-group">          
               <input type="text" name="name" class="form-control" id="patient-name" placeholder="Name" required>
@@ -500,8 +506,138 @@
           <div class="form-group row mt-3">
             <textarea class="form-control" name="message" rows="5" placeholder="Describe your predicted symptoms (Optional)"></textarea>
           </div>
+<<<<<<< HEAD
           <div class="validate"></div>
         </div>
+=======
+         
+        
+            
+          
+          <div class="mb-3">
+         
+          
+
+          <div class="text-center">
+         <button onclick="toggleText()" type="submit" class"btn-get-started scrollto">Make appoint</button></div>
+          <div>
+
+         
+<p id="Myid">Your appointment request has been sent successfully. Thank you!</p>
+<script>
+function toggleText(){
+  var x = document.getElementById("Myid");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+ 
+</script>
+<div>
+
+
+</div>
+</div>
+</div>
+        </form>
+        </div>
+      </section>  
+        
+ <!--<div class="content">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                      
+                     
+                        <h4 class="page-title">Add Appointment</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=" col-lg-8 offset-lg-2">
+                        
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+										<label>Patient Name </label>
+                    <form action="/appointment" method="POST"></form>
+										<input class="form-control" type="text" name="p_name" >
+									</div>
+                                </div>
+                               
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Department</label>
+                                        <select class="" name="department">
+                                            
+                                            <option value="Dentists">Dentists</option>
+                                            <option value="Neurology">Neurology</option>
+                                            <option value="Opthalmology">Opthalmology</option>
+                                            <option value="Orthopedics">Orthopedics</option>
+                                            <option value="Cancer Departmen">Cancer Department</option>
+                                            <option value="ENT Departmen">ENT Department</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Doctor Name</label>
+                                        <input type="text" name="d_name" id="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Date</label>
+                                        <div class="cal-icon">
+                                            <input type="text" class="form-control datetimepicker" name="date">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Time</label>
+                                        <div class="time-icon">
+                                            <input type="text" class="form-control" id="datetimepicker3" name="time">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Patient Email</label>
+                                        <input class="form-control" type="email" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Patient Phone Number</label>
+                                        <input class="form-control" type="text" name="phone">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="m-t-20 text-center">
+                                <button class="btn btn-primary submit-btn">Create Appointment</button>
+
+
+                            </div>
+                            <div class="m-t-20 text-center">
+                                <button class="btn btn-primary submit-btn">Update Appointment</button>
+                            </div>
+                            <div class="m-t-20 text-center">
+                            <button class="btn btn-primary submit-btn">Delete Appointment</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+      
+>>>>>>> f6b3e1c0abd66039aeb3f0eac0326b57a8b37f61
 
         <div class="form-group row justify-content-end">
           <div class="text-center">
@@ -612,9 +748,11 @@
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container-fluid">
-
+ <div class="section-title">
+          <h2>Consultation</h2>
         <div class="row">
           <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
+            
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>
           </div>
 
