@@ -6,7 +6,12 @@ const sqlite3 = require('sqlite3');
 const { open } = require('sqlite');
 
 const app = express();
+// const TeachableMachine = require("@sashido/teachablemachine-node");
 const PORT =  process.env.PORT || 3000;
+
+// const model = new TeachableMachine({
+// 	modelUrl: "https://teachablemachine.withgoogle.com/models/mS8IUBmbP/"
+//   });
 
 // enable the req.body object - to allow us to use HTML forms
 app.use(express.json());
@@ -27,9 +32,6 @@ open({
 	driver: sqlite3.Database
 })
 
-	
-
-
 let counter = 0;
 
 app.get('/', function(req, res) {
@@ -42,6 +44,20 @@ app.post('/count', function(req, res) {
 	counter++;
 	res.redirect('/')
 });
+// app.get("/image/classify", async (req, res) => {
+//   const { url } = req.query;
+
+//   return model.classify({
+//     imageUrl: url,
+//   }).then((predictions) => {
+//     console.log(predictions);
+//     return res.json(predictions);
+//   }).catch((e) => {
+//     console.error(e);
+//     res.status(500).send("Something went wrong!")
+//   });
+// });
+
 
 
 
