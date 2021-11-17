@@ -2,8 +2,6 @@ const express = require('express');
 const exphbs  = require('express-handlebars');
 
 // import sqlite modules
-const sqlite3 = require('sqlite3');
-const { open } = require('sqlite');
 
 const app = express();
 const PORT =  process.env.PORT || 3017;
@@ -47,10 +45,7 @@ app.use(bodyParser.json());
 
 //database set up//
 
-open({
-	filename: './data.db',
-	driver: sqlite3.Database
-})
+
 
 //app.get('/appointment',function(req,res){
     //res.render('index');
