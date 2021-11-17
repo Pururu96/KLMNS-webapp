@@ -59,7 +59,8 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#services">Medical Info</a></li>
-          &nbsp; &nbsp;<a href="#appointment" class="scrollto"><span class="d-none d-md-inline">Make an Appointment</a>
+          &nbsp; &nbsp;
+          <li><a href="#appointment" class="scrollto"><span class="d-none d-md-inline">Make an Appointment</a></li>
           <li><a class="nav-link scrollto" href="#about">Consultation</a></li>
           {{!-- <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li> --}}
           {{!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a> --}}
@@ -213,7 +214,7 @@
           <div class="col-lg-12 col-md-6 d-flex align-items-stretch">
             <div class="icon-box">
               <div class="icon"><i class="fas fa-heartbeat"></i></div>
-              <h4><a href="/personalinfo">Personal information</a></h4>
+              <h4>Personal information</h4>
               <p>Please provide accurate personal details below</p>
 
               <form class="row g-3">
@@ -325,35 +326,48 @@
                 <div class="col-12">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                      Agree to terms and conditions
+                    <label class="form-check-label" for="gridCheck">Agree to terms and conditions
                     </label>
                   </div>
                 </div>
-                <div class="col-6">
-                  <button type="submit" class="btn btn-primary">Save</button>
-                </div>
-                <div class="col-6">
 
-                  <button type="submit" class="btn btn-primary">Continue</button>
+          
+                
+<div>
+
+
+
+                  <button type="submit"  class="btn btn-primary">Save&Continue</button>
                 </div>
+                
               </form>
             </div>
           </div>
         </div>
         <br>
 
+
         <div class="container">
-          <div class="icon-box">
-            <div class="icon"><i class="fas fa-hospital-user"></i></div>
-              
-             <h1>Symptoms</h1>
+
+<div class="row">
+
+
+       
+            <div class="col-lg-12 col-md-6 d-flex align-items-stretch"></div>
+
+
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-hospital-user"></i></div>
+
+              <h4>Symptoms</h4>
+              <p>Please tick the symptoms applicable to you</p>
               <form>
                 <ul class="list">
                   <li>
                     <input id="item-0" type="checkbox">
-                    <label for="item-0">Chronic cough</label>
+                    <label for="item-0">Severe cough</label>
                   </li>
+
                   <li>
                     <input id="item-1" type="checkbox">
                     <label for="item-1">Sneezing</label>
@@ -400,21 +414,33 @@
                     <label for="item-12">Discolouration</label>
                   </li>
                   <li>
-                    <input id="item-11" type="checkbox">
-                    <label for="item-11">Loss of speech or mobility</label>
+                    <input id="item-13" type="checkbox">
+                    <label for="item-13">Loss of speech or mobility</label>
+                  <li>
+                    <input id="item-14" type="checkbox">
+                    <label for="item-14">Lower backpain</label>
+                  </li>
                 </ul>
                 <div>
                   <form action="nextpage.php" method="POST">
                   </form>
                   <button type="submit">Submit</button>
+
                 </div>
               </form>
+              
             </div>
           </div>
-
         </div>
+<<<<<<< HEAD
        
     </section><!-- End Services Section --> 
+=======
+      
+    
+
+    </section><!-- End Services Section -->
+>>>>>>> 5344e10358ca4b52aef7d655384d4db1e50a90af
 
     <!-- ======= Appointment Section ======= -->
     <section id="appointment" class="appointment section-bg">
@@ -422,35 +448,37 @@
 
         <div class="section-title">
           <h2>Make an Appointment</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
+          <p>Please make an appointment below with our trusted doctors</p>
         </div>
 
         <form action="appointment" method="post" role="form" class="email-form">
           <div class="row">
             <div class="col-md-4 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
-                data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
+                        
+              <input type="text" name="name" class="form-control" id="patient-name" placeholder="Name" required>
             </div>
+
             <div class="col-md-4 form-group mt-3 mt-md-0">
               <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
                 data-rule="email" data-msg="Please enter a valid email">
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone"
-                data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
+              <input type="tel" class="form-control" id="phone" placeholder="123" required>
             </div>
           </div>
+
           <div class="row">
             <div class="col-md-4 form-group mt-3">
+<<<<<<< HEAD
               <input type="date" name="date" class="form-control datepicker" id="datetime"
                 placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
+=======
+              <input type="date" class="form-control" id="date" placeholder="Date">
+>>>>>>> 5344e10358ca4b52aef7d655384d4db1e50a90af
             </div>
+              
             <div class="col-md-4 form-group mt-3">
               <select name="department" id="department" class="form-select">
                 <option value="">Select Department</option>
@@ -459,14 +487,32 @@
               </select>
               <div class="validate"></div>
             </div>
+
             <div class="col-md-4 form-group mt-3">
               <select name="doctor" id="doctor" class="form-select">
                 <option value="">Select Doctor</option>
+<<<<<<< HEAD
                 <option value="Doctor 1">Dr Radebe</option>
                 <option value="Doctor 2">Dr Madoda</option>
+=======
+                <option value="Doctor 1">Dr Leta</option>
+                <option value="Doctor 2">Dr Mphahlele</option>
+                <option value="Doctor 2">Dr Kgomokaboya</option>
+                <option value="Doctor 2">Dr Simelane</option>
+                <option value="Doctor 2">Dr Ngwekazi</option>
+>>>>>>> 5344e10358ca4b52aef7d655384d4db1e50a90af
               </select>
               <div class="validate"></div>
             </div>
+            <div class="row">
+              <label class="col-md-12 form-group mt-3">
+                Time
+              </label>
+              <div class="col-md-12 form-group mt-3">
+                <input type="time" id="time" class="form-control">
+              </div>
+            </div>
+
           </div>
           <div class="row">
               <label class="col-md-12 form-group mt-3">
@@ -477,23 +523,27 @@
               </div>
             </div>
           <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
-            <div class="validate"></div>
+            <textarea class="form-control" name="message" rows="5" placeholder="Describe your symptoms (Optional)"></textarea>
+            
           </div>
-          <div class="mb-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+
+          <div class="text-center">
+            <button type="submit">Submit</button>
           </div>
+<<<<<<< HEAD
           <div class="text-center"><button type="submit">Confirm</button></div>
+=======
+
+>>>>>>> 5344e10358ca4b52aef7d655384d4db1e50a90af
         </form>
 
       </div>
-    </section><!-- End Appointment Section -->
+    </section>
+    <!-- End Appointment Section -->
 
     <!-- Start Appointment Section -->
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <nav class="navbar navbar-expand-lg nav-back fixed-top" id="mainNav">
       <div class="container">
@@ -519,8 +569,8 @@
                 <input type="text" id="patient-name" class="form-control" placeholder="Name" required>
               </div>
             </div>
-            <!---->
-            <div class="form-group row">
+            <!-->
+    <!--  <div class="form-group row">
               <label class="col-sm-4 col-lg-4">
                 Contact
               </label>
@@ -528,8 +578,8 @@
                 <input type="tel" id="contact" class="form-control" placeholder="123" required>
               </div>
             </div>
-            <!---->
-            <div class="form-group row">
+            <!-->
+    <!--  <div class="form-group row">
               <label class="col-sm-4 col-lg-4">
                 Date
               </label>
@@ -537,8 +587,8 @@
                 <input type="date" id="date" class="form-control">
               </div>
             </div>
-            <!---->
-            <div class="form-group row">
+            <!-->
+    <!-- <div class="form-group row">
               <label class="col-sm-4 col-lg-4">
                 Time
               </label>
@@ -546,8 +596,8 @@
                 <input type="time" id="time" class="form-control">
               </div>
             </div>
-            <!---->
-            <div class="form-group row">
+            <!-->
+    <!--  <div class="form-group row">
               <label class="col-sm-4 col-lg-4">
                 Symptoms
               </label>
@@ -555,8 +605,8 @@
                 <textarea id="symptoms" class="form-control" required></textarea>
               </div>
             </div>
-            <!---->
-            <div class="form-group row justify-content-end">
+            <!-->
+    <!--   <div class="form-group row justify-content-end">
               <div class="col-sm-5">
                 <button type="submit" class="btn btn-form">
                   Confirm
@@ -572,7 +622,13 @@
         </div>
       </div>
     </div>
+<<<<<<< HEAD
     
+=======
+    <script src="main.js"></script>
+     <!-->
+
+>>>>>>> 5344e10358ca4b52aef7d655384d4db1e50a90af
     <!-- End consultation Section -->
 
     <!-- ======= About Section ======= -->
