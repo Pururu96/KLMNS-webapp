@@ -1,6 +1,6 @@
 const express = require('express');
 const exphbs  = require('express-handlebars');
-var db = require ('./db_medical');
+
 // import sqlite modules
 const sqlite3 = require('sqlite3');
 const { open } = require('sqlite');
@@ -22,12 +22,11 @@ app.set('view engine', 'handlebars');
 
 
 
-var ejs= require ('ejs');
-var async = require ('async');
-//const appointment = require ('./controllers/appointment');
+
+
 
 var bodyParser = require ('body-parser');
-var medical = require ('./medical.js');
+
 
 
 
@@ -83,16 +82,16 @@ app.post('/count', function(req, res) {
 	res.redirect('/')
 });
 
-app.post('/appointment', function(req, res) {
+//app.post('/appointment', function(req, res) {
 
-	var {name, email, department, doctor, message} = req.body;
+	//var {name, email, department, doctor, message} = req.body;
 	
-	console.log(name);
+	//console.log(name);
 	
-	res.redirect('/')
+	//res.redirect('/')
 
 
-});
+//});
 
 
 
