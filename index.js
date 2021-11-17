@@ -83,6 +83,18 @@ app.post('/count', function(req, res) {
 	res.redirect('/')
 });
 
+app.post('/appointment', function(req, res) {
+
+	var {name, email, department, doctor, message} = req.body;
+	
+	console.log(name);
+	
+	res.redirect('/')
+
+
+});
+
+
 
 
 // start  the server and start listening for HTTP request on the PORT number specified...

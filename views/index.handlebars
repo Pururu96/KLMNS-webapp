@@ -446,21 +446,24 @@
           <p>Please make an appointment below with our trusted doctors</p>
         </div>
 
+<<<<<<< HEAD
+        <form action="/appointment" method="post" role="form">
+=======
        <form action="forms/appointment.php" method="post" role="form" class="php-email-form"></form>
+>>>>>>> f6b3e1c0abd66039aeb3f0eac0326b57a8b37f61
           <div class="row">
-            <div class="col-md-4 form-group">
-                        
+            <div class="col-md-4 form-group">          
               <input type="text" name="name" class="form-control" id="patient-name" placeholder="Name" required>
             </div>
 
             <div class="col-md-4 form-group mt-3 mt-md-0">
               <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
                 data-rule="email" data-msg="Please enter a valid email">
-              <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group mt-3 mt-md-0">
               <input type="tel" class="form-control" id="phone" placeholder="123" required>
             </div>
+            <div class="validate"></div>
           </div>
 
           <div class="row">
@@ -474,7 +477,6 @@
                 <option value="Department 1">Department 1</option>
                 <option value="Department 2">Department 2</option>
               </select>
-              <div class="validate"></div>
             </div>
 
             <div class="col-md-4 form-group mt-3">
@@ -482,12 +484,12 @@
                 <option value="">Select Doctor</option>
                 <option value="Doctor 1">Dr Leta</option>
                 <option value="Doctor 2">Dr Mphahlele</option>
-                <option value="Doctor 2">Dr Kgomokaboya</option>
-                <option value="Doctor 2">Dr Simelane</option>
-                <option value="Doctor 2">Dr Ngwekazi</option>
+                <option value="Doctor 3">Dr Kgomokaboya</option>
+                <option value="Doctor 4">Dr Simelane</option>
+                <option value="Doctor 5">Dr Ngwekazi</option>
               </select>
-              <div class="validate"></div>
             </div>
+
             <div class="row">
               <label class="col-md-12 form-group mt-3">
                 Time
@@ -495,14 +497,19 @@
               <div class="col-md-12 form-group mt-3">
                 <input type="time" id="time" class="form-control">
               </div>
-            </div>
-
-          </div>
-
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Describe your symptoms (Optional)"></textarea>
             
+            </div>
+            <div class="validate"></div>
           </div>
+        
+        <div class="form-group row">
+          <div class="form-group row mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Describe your predicted symptoms (Optional)"></textarea>
+          </div>
+<<<<<<< HEAD
+          <div class="validate"></div>
+        </div>
+=======
          
         
             
@@ -630,11 +637,22 @@ function toggleText(){
                 </div>
             </div>
       
+>>>>>>> f6b3e1c0abd66039aeb3f0eac0326b57a8b37f61
 
+        <div class="form-group row justify-content-end">
           <div class="text-center">
-            <button type="submit">Submit</button>
-          </div>
+            <button type="submit" row= class="btn btn-form" >
+              Submit 
+            </button>
+          <div class="validate"></div>
+        </div>
 
+        <div class="mb-3">
+            <div class="loading"></div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+            <div class="validate"></div>
+        </div>
         </form>
 
       </div>

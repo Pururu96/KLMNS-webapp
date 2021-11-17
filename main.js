@@ -280,18 +280,18 @@
     
       ScheduleDB.onupgradeneeded = function(e) {
            
-           let db = e.target.result;
+          //  let db = e.target.result;
            
-           let objectStore = db.createObjectStore('consultations', { keyPath: 'key', autoIncrement: true } );
+          //  let objectStore = db.createObjectStore('consultations', { keyPath: 'key', autoIncrement: true } );
  
          
-           objectStore.createIndex('patientname', 'patientname', { unique: false } );
-           objectStore.createIndex('contact', 'contact', { unique: false } );
-           objectStore.createIndex('date', 'date', { unique: false } );
-           objectStore.createIndex('time', 'time', { unique: false } );
-           objectStore.createIndex('symptoms', 'symptoms', { unique: false } );
+          //  objectStore.createIndex('patientname', 'patientname', { unique: false } );
+          //  objectStore.createIndex('contact', 'contact', { unique: false } );
+          //  objectStore.createIndex('date', 'date', { unique: false } );
+          //  objectStore.createIndex('time', 'time', { unique: false } );
+          //  objectStore.createIndex('symptoms', 'symptoms', { unique: false } );
  
-           console.log('Database ready and fields created!');
+          //  console.log('Database ready and fields created!');
       }
  
       form.addEventListener('submit', addConsultations);
