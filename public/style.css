@@ -301,6 +301,9 @@ button {
   font-size: 14px;
   display: inline-block;
 }
+.sent-message{
+  text-align: center;
+}
 .appointment-btn:hover {
   background: #166ab5;
   color: #fff;
@@ -1049,6 +1052,7 @@ section {
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
+
 .appointment .php-email-form input, .appointment .php-email-form textarea, .appointment .php-email-form select {
   border-radius: 0;
   box-shadow: none;
@@ -1209,6 +1213,7 @@ section {
 .doctors .member .social a + a {
   margin-left: 8px;
 }
+
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions
