@@ -81,20 +81,6 @@ app.post('/count', function(req, res) {
 	counter++;
 	res.redirect('/')
 });
-// app.get("/image/classify", async (req, res) => {
-//   const { url } = req.query;
-
-//   return model.classify({
-//     imageUrl: url,
-//   }).then((predictions) => {
-//     console.log(predictions);
-//     return res.json(predictions);
-//   }).catch((e) => {
-//     console.error(e);
-//     res.status(500).send("Something went wrong!")
-//   });
-// });
-
 
 //app.post('/appointment', function(req, res) {
 
