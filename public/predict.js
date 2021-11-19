@@ -53,6 +53,6 @@ $("#predict-button").click(async function () {
 
 	$("#prediction-list").empty();
 	top5.forEach(function (p) {
-		$("#prediction-list").append(`<li>${p.className}: ${p.probability.toFixed(6)}</li>`);
+		$("#prediction-list").append(`<li><strong>${p.className}</strong>: ${p.probability.toFixed(4)*100 + '%'}</li>`);
 		});
 });

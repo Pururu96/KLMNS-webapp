@@ -1,7 +1,7 @@
 TARGET_CLASSES = {
-  0: "Normal",
-  1: "Bacterial Pneumonia",
-  2: "Viral Pneumonia",
-  3: "Covid19",
-  4: "Tuberculosis"
+  0: "Bacterial Pneumonia",
+  1: "Covid-19",
+  2: "Normal",
+  3: "Tuberculosis",
+  4: "Viral Pneumonia"
 };
