@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Medilab Bootstrap Template - Index</title>
+  <title>KLMNS Healthcare Services</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -13,7 +13,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="ph.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -337,9 +337,10 @@
         </div>
 
         
+        
                   <div class="icon-box">
                     <div class="icon"><i class="fas fa-hospital-user"></i></div>
-      
+
                     <h4>Symptoms</h4>
                     <p>Please tick the symptoms applicable to you</p>
                     <form action='/symptoms' method='POST' class="row g-3">
@@ -445,45 +446,51 @@
         
 
 
-        
 
     </section><!-- End Services Section -->
+
     
+
     <section id="appointment" class="appointment">
+      <div class="section-title">
+        <h2>Diagnosis</h2>
+      </div>
       <div class="center">
         <h2>Respiratory Disease Analyzer</h2>
-  
+
         <main class="container mt-5">
           <div class="row">
             <div class="col-12">
               <div class="progress-bar progress progress-bar-striped progress-bar-animated mb-2">Loading Model</div>
             </div>
           </div>
-  
+
           <div class="row">
             <div class="col-8">
               <input type="file" id="image-selector" class="form-control border-0">
             </div>
-  
+
             <div class="col-4">
               <button id="predict-button" class=" mt-0 float-right btn btn-primary">Predict</button>
             </div>
           </div>
-  
+
           <div class="row mt-5 mb-5">
             <div class="col-6">
               <h2>Image</h2>
               <img id="selected-image" width="250" alt="">
             </div>
-  
+
             <div class="col-6">
               <h2>Predictions:</h2>
               <ol class="nostyle" id="prediction-list"></ol>
             </div>
         </main>
       </div>
-  </div>
+
     </section>
+    
+
 
     <!-- ======= Appointment Section ======= -->
     <!-- <section id="appointment" class="appointment section-bg">
@@ -654,8 +661,8 @@
       <div class="container-fluid">
 
         <div class="section-title">
-    
-        <h2>Consultation</h2>
+
+          <h2>Consultation</h2>
         </div>
         <div class="row">
           <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
