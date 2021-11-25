@@ -112,12 +112,12 @@
   <section id="hero" class="d-flex align-items-center">
     <div class="container center">
       <h1>Welcome to KLMNS</h1>
-     
-      
+
+
       <h2>You are in safe hands</h2>
       <img src="ph.png" width="150"> <br>
-      
-      
+
+
     </div>
   </section><!-- End Hero -->
 
@@ -130,14 +130,14 @@
         <div class="row">
           <div class="col-lg-12 d-flex align-items-stretch">
             <div class="content">
-              
+
               <div class="row">
                 <div class="col-lg-12 col-md-6 d-flex align-items-stretch text center">
                   <div class="icon-box">
-                    
-                   <h3>Personal info</h3>
+
+                    <h3>Personal info</h3>
                     <p>Please provide accurate personal details below</p>
-      
+
                     <form action='/personal' method='POST' class="row g-3">
                       <div class="col-md-6">
                         <label for="inputName4" class="form-label">First Name</label>
@@ -147,14 +147,14 @@
                         <label for="inputSurname" class="form-label">Last Name</label>
                         <input type="surname" class="form-control" id="inputSurname">
                       </div>
-      
+
                       <div class="col-md-4">
                         <label class="inputeDate">Date of birth</label>
-      
+
                         <input type="date" id="date" class="form-control">
                       </div>
-      
-      
+
+
                       <div class="col-md-4">
                         <label for="inputGender" class="form-label">Gender</label>
                         <select id="inputGender" class="form-select">
@@ -164,7 +164,7 @@
                           <option value="2">Other</option>
                         </select>
                       </div>
-      
+
                       <div class="col-md-4">
                         <label for="inputRace" class="form-label">Race</label>
                         <select id="inputRace" class="form-select">
@@ -175,12 +175,12 @@
                           <option value="2">Indian/Asian</option>
                         </select>
                       </div>
-      
+
                       <div class="col-4">
                         <label for="inputAddress" class="form-label">Address</label>
                         <input type="text" class="form-control" id="inputAddress" placeholder="1234 Lilian Ngoyi St">
                       </div>
-                     
+
                       <div class="col-md-4">
                         <label for="inputCity" class="form-label">City</label>
                         <input type="text" class="form-control" id="inputCity">
@@ -199,55 +199,49 @@
                           <option value="3">Eastern Cape</option>
                         </select>
                       </div>
-      
+
                       <div class="col-md-2">
                         <label for="inputPostalcode" class="form-label">Postal Code</label>
                         <input type="text" class="form-control" id="inputPostalcode">
                       </div>
-      
+
                       <div class="col-md-4">
                         <label for="inputCell" class="form-label">Cell no.</label>
                         <input type="text" class="form-control" id="inputCell">
                       </div>
-                      
+
                       <div class="col-md-4">
                         <label for="inputEmail" class="form-label">Email</label>
                         <input type="text" class="form-control" id="inputEmail">
                       </div>
-                     
-                      
+
+
                       <div class="terms">
                         <h4>Consent for diagnosis</h4>
-                        <p>I do hereby authorize that all the above information is correct. I consent to give KLMNS access to
-                          my medical records and to offer me a remote diagnosis. I fully understand that KLMNS will not be
-                          help liable for any damages to my health due to a misdiagnosis and I agree that KLMNS can use my
+                        <p>I do hereby authorize that all the above information is correct. I consent to give KLMNS
+                          access to
+                          my medical records and to offer me a remote diagnosis. I fully understand that KLMNS will not
+                          be
+                          help liable for any damages to my health due to a misdiagnosis and I agree that KLMNS can use
+                          my
                           personal information for research purposes.</p>
                       </div>
-      
-      
+
+
                       <div class="col-12">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" id="gridCheck">
                           <label class="form-check-label" for="gridCheck">Agree to terms and conditions
                           </label>
                         </div>
-                      </form>
-                     
-      
-      
-      
-      
-                      
-                        
-      
-                       
-             
-                <button class="center"><a href="#services" class=" a scrollto">Get Started</a></button>
-                
-              
-            </div>
-          </div>
-          <!--<div class="col-lg-8 d-flex align-items-stretch">
+                    </form>
+
+                    <button class="center"><a href="#services" class=" a scrollto">Get Started</a></button>
+
+
+                  </div>
+                </div>
+                <!--<div class="col-lg-8 d-flex align-items-stretch">
             <div class="icon-boxes d-flex flex-column justify-content-center">
               <div class="row">
                 <div class="col-xl-4 d-flex align-items-stretch">
@@ -273,10 +267,10 @@
                 </div>
               </div>
             </div><!-- End .content-->
-          </div>
-        </div>
+              </div>
+            </div>
 
-      </div>
+          </div>
     </section><!-- End Why Us Section -->
 
     <!-- ======= Counts Section ======= -->
@@ -336,120 +330,81 @@
             relax you are in safe hands.</p>
         </div>
 
-        
-        
-                  <div class="icon-box">
-                    <div class="icon"><i class="fas fa-hospital-user"></i></div>
 
-                    <h4>Symptoms</h4>
-                    <p>Please tick the symptoms applicable to you</p>
-                    <form action='/symptoms' method='POST' class="row g-3">
-                   
-                      <ul class="list">
-                        <li>
-                          
-                          <label for="item-0">Chest pain when you cough<input id="item-0" type="checkbox"></label>
-                        </li>
-                        
-                        <li>
-                          
-                          <label for="item-1">Severe cough <input id="item-1" type="checkbox"></label>
-                        </li>
-                        <li>
-                          
-                          <label for="item-2">Dry cough with phelgm <input id="item-2" type="checkbox"></label>
-                        </li>
-                        
-      
-                        <li>
-                          <label for="item-3">Sneezing  <input id="item-3" type="checkbox"></label>
-                        </li>
-                        <li>
-                          
-                          <label for="item-4">Sore throat <input id="item-4" type="checkbox"></label>
-                        </li>
-                        <li>
-                          
-                          <label for="item-5">Shaking/weak<input id="item-5" type="checkbox"></label>
-                        </li>
-                        <li>
-                          
-                          <label for="item-6">Blue tint on lips<input id="item-6" type="checkbox"></label>
-                        </li>
-                        <li>
-                          
-                          <label for="item-7">Muscle ache<input id="item-7" type="checkbox"></label>
-                        </li>
-                        <li>
-                          
-                          <label for="item-8">Fever<input id="item-8" type="checkbox"></label>
-                        </li>
-                        <li>
-                          
-                          <label for="item-9">Headache <input id="item-9" type="checkbox"></label>
-                        <li>
-                          
-                          <label for="item-10">Runny nose <input id="item-10" type="checkbox"></label>
-                        </li>
-                        <li>
-                          
-                          <label for="item-11">High temperature <input id="item-11" type="checkbox"></label>
-                        </li>
-                        
-                        <li>
-                          <label for="item-12">Shortness of breath <input id="item-12" type="checkbox"></label>
-                        </li>
-                        <li>
-                          
-                          <label for="item-13">Swollen lymph nodes <input id="item-13" type="checkbox"></label>
-                        </li>
 
-                        <li>
-                         
-                          <label for="item-14">Loss of appetite <input id="item-14" type="checkbox"></label>
-                        </li>
-                        <li>
-                          
-                          <label for="item-15">Rapid breathing <input id="item-15" type="checkbox"></label>
-                        </li>
-                        <li>
-                          
-                          <label for="item-16">Nausea/Diarrhoea <input id="item-16" type="checkbox"></label>
-                        <li>
-                          
-                          <label for="item-17">Discolouration <input id="item-17" type="checkbox"></label>
-                        </li>
-                        <li>
-                          
-                          <label for="item-18">Loss of speech or mobility <input id="item-18" type="checkbox"></label>
-                        <li>
-                          
-                          <label for="item-19">Lower backpain <input id="item-19" type="checkbox"></label>
-                        </li>
-                      </ul>
-                      
-                    
-                 
-                  
+        <div class="icon-box">
+          <div class="icon"><i class="fas fa-hospital-user"></i></div>
 
-                    <div>
-                      <button type="submit" value="submit">Submit</button>
-                    </form>
-                    </div>
-                    </div>
-           
-         
-        
+          <h4>Symptoms</h4>
+          <p>Please tick the symptoms applicable to you</p>
+          <form action='/symptoms' method='POST' class="row g-3">
+
+            <ul class="list">
+              <input type="checkbox" name="chest" value="on">Chest pain when you cough
+              &nbsp; &nbsp;
+              <input type="checkbox" name="severe" value="on">Severe cough
+              &nbsp; &nbsp;
+              <input type="checkbox" name="dry" value="on">Dry cough with phelgm
+              &nbsp; &nbsp;
+              <input type="checkbox" name="sneeze" value="on">Sneezing
+              &nbsp; &nbsp;
+              <input type="checkbox" name="sore" value="on">Sore throat
+              &nbsp; &nbsp;
+              <input type="checkbox" name="shake" value="on">Shaking/weak
+              &nbsp; &nbsp;
+              <input type="checkbox" name="blue" value="on">Blue tint on lips
+              &nbsp; &nbsp;
+              <input type="checkbox" name="muscle" value="on">Muscle ache
+              &nbsp; &nbsp; 
+              <input type="checkbox" name="fever" value="on">Fever 
+              &nbsp; &nbsp;
+              <input type="checkbox" name="head" value="on">Headache
+              &nbsp; &nbsp;
+              <input type="checkbox" name="runny" value="on">Runny nose
+              &nbsp; &nbsp;
+              <input type="checkbox" name="high" value="on">High temperature
+              &nbsp; &nbsp;
+              <input type="checkbox" name="short" value="on">Shortness of breath
+              &nbsp; &nbsp;
+              <input type="checkbox" name="swollen" value="on">Swollen lymph nodes
+              &nbsp; &nbsp;
+              <input type="checkbox" name="loss" value="on">Loss of appetite
+              &nbsp; &nbsp;
+              <input type="checkbox" name="rapid" value="on">Rapid breathing
+              &nbsp; &nbsp;
+              <input type="checkbox" name="nause" value="on">Nausea/Diarrhoea
+              &nbsp; &nbsp;
+              <input type="checkbox" name="discolor" value="on">Discolouration
+              &nbsp; &nbsp;
+              <input type="checkbox" name="loss" value="on">Loss of speech or mobility
+              &nbsp; &nbsp;
+              <input type="checkbox" name="low" value="on">Lower backpain
+              &nbsp; &nbsp;
+
+            </ul>
+
+
+
+
+
+            <div>
+              <button type="submit" value="submit">Submit</button>
+          </form>
+        </div>
       </div>
-    </div>
-      
-        
+
+
+
+      </div>
+      </div>
+
+
 
 
 
     </section><!-- End Services Section -->
 
-    
+
 
     <section id="appointment" class="appointment">
       <div class="section-title">
@@ -489,7 +444,7 @@
       </div>
 
     </section>
-    
+
 
 
     <!-- ======= Appointment Section ======= -->
@@ -674,14 +629,14 @@
             <h3>Virtual doctor</h3>
             <p>Enjoy the convenience of an Online Consultation</p>
 
-           
+
 
 
 
             <div class="icon-box">
               <div class="icon"><i class="bx bx-gift"></i></div>
               <h4 class="title"><a href="">What is a video consultation?</a></h4>
-              <p class="description">Video consultations are appointments that take place between a patient and 
+              <p class="description">Video consultations are appointments that take place between a patient and
                 health care professional over video, as opposed to face to face or over the telephone. </p>
             </div>
 
